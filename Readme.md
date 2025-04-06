@@ -10,7 +10,7 @@ Odoo 16 CE configurado para que funcione FE ARCA con Reg. 5616
 
 1. Clonar el repo
 
-git clone -b 16.0 https://github.com/devman-dev/docker_odoo16CE_5616.git
+git clone -b 1X.0 https://github.com/devman-dev/docker_odoCE_ARCA_2025.git
 
 2. Ejecutar up.sh
 
