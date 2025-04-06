@@ -1,7 +1,7 @@
 # Proyecto de Automatización con Docker y Caddy
 
 ## Introducción
-Odoo 16 CE configurado para que funcione FE ARCA con Reg. 5616
+Odoo 1X CE configurado para que funcione FE ARCA con Reg. 5614/5614
 
 
 
