@@ -33,7 +33,7 @@ git clone -b 18.0 --single-branch https://github.com/OCA/sale-workflow.git ./odo
 git clone -b 18.0 --single-branch https://github.com/OCA/reporting-engine.git ./odoo-addons/OCA/reporting-engine 
 git clone -b 18.0 --single-branch https://github.com/OCA/project.git ./odoo-addons/OCA/project
 
-git clone -b 18.0 --single-branch https://github.com/devman-dev/devman-addons.git ./odoo-addons/source/devman-addons
+#git clone -b 18.0 --single-branch https://github.com/devman-dev/devman-addons.git ./odoo-addons/source/devman-addons
 #git clone -b main --single-branch https://github.com/devman-dev/basic.git ./odoo-addons/source/basic
 # Agrega configuracion de Odoo
 sudo cp -f odoo.conf odoo-etc/
