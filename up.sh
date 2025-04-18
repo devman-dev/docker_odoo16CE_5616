@@ -39,7 +39,7 @@ git clone -b 18.0 --single-branch https://github.com/OCA/project.git ./odoo-addo
 sudo cp -f odoo.conf odoo-etc/
 
 # Copiando directorio del regimen 5616 14 - 2024
-sudo cp -r ./rg5616-14-2024/* ./odoo-addons/ingadhoc/odoo-argentina-ce 
+sudo cp -r ./rg5616-14-2025/* ./odoo-addons/ingadhoc/odoo-argentina-ce 
 
 # Reiniciado servicios
 docker compose down
