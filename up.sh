@@ -24,7 +24,7 @@ git clone -b 18.0 --single-branch https://github.com/ingadhoc/odoo-argentina-ce.
 git clone -b 18.0 --single-branch https://github.com/OCA/account-financial-reporting.git ./odoo-addons/OCA/account-financial-reporting 
 git clone -b 18.0 --single-branch https://github.com/OCA/account-reconcile.git ./odoo-addons/OCA/account-reconcile 
 # Verificar que se migre el módulo web a la versión 18.0 18.0-mig-web_ir_actions_act_multi
-# && git clone -b 18.0 --single-branch https://github.com/OCA/web.git ./odoo-addons/OCA/web 
+git clone -b 18.0 --single-branch https://github.com/OCA/web.git ./odoo-addons/OCA/web 
 git clone -b 18.0-mig-web_ir_actions_act_multi-v2 --single-branch https://github.com/adhoc-dev/web.git ./odoo-addons/OCA/web 
 git clone -b 18.0 --single-branch https://github.com/OCA/server-tools.git ./odoo-addons/OCA/server-tools 
 git clone -b 18.0 --single-branch https://github.com/OCA/server-ux.git ./odoo-addons/OCA/server-ux 
@@ -38,7 +38,8 @@ git clone -b 18.0 --single-branch https://github.com/OCA/project.git ./odoo-addo
 # Agrega configuracion de Odoo
 sudo cp -f odoo.conf odoo-etc/
 
-
+# Copiando directorio del regimen 5616 14 - 2024
+sudo cp -r ./rg5616-14-2024/* ./odoo-addons/ingadhoc/odoo-argentina-ce 
 
 # Reiniciado servicios
 docker compose down

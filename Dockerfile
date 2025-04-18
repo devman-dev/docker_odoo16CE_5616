@@ -30,7 +30,7 @@ RUN git clone -b 18.0 --single-branch https://github.com/ingadhoc/odoo-argentina
 RUN git clone -b 18.0 --single-branch https://github.com/OCA/account-financial-reporting.git /mnt/extra-addons/OCA/account-financial-reporting \
     && git clone -b 18.0 --single-branch https://github.com/OCA/account-reconcile.git /mnt/extra-addons/OCA/account-reconcile \
     # Verificar que se migre el módulo web a la versión 18.0 18.0-mig-web_ir_actions_act_multi
-    # && git clone -b 18.0 --single-branch https://github.com/OCA/web.git /mnt/extra-addons/OCA/web \
+    #&& git clone -b 18.0 --single-branch https://github.com/OCA/web.git /mnt/extra-addons/OCA/web \
     && git clone -b 18.0 --single-branch https://github.com/OCA/web.git /mnt/extra-addons/OCA/web \ 
     && git clone -b 18.0 --single-branch https://github.com/OCA/server-tools.git /mnt/extra-addons/OCA/server-tools \
     && git clone -b 18.0 --single-branch https://github.com/OCA/server-ux.git /mnt/extra-addons/OCA/server-ux \
