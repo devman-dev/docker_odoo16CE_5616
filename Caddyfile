@@ -1,0 +1,47 @@
+(common) {
+	# Configuración de compresión simplificada
+	encode gzip
+
+	# Headers de seguridad
+	header {
+		X-Frame-Options "SAMEORIGIN"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+
+	# Logs con sintaxis actualizada
+	log {
+		output file {args[0]}/site.log {
+			roll_size 10MB
+			roll_keep 5
+			roll_keep_for 720h
+		}
+	}
+}
+
+# EJ: Configuración del subdominio ejemplo con proxy inverso a Odoo y OdooChat
+# # Configuración del subdominio EJEMPLO
+# EJEMPLO.devman2.com {
+#     import common \"/var/log/caddy/ejemplo\"
+#     # Redirección de solicitudes a Odoo backend
+#     handle {
+#         reverse_proxy localhost:8069 {
+#             # Configuración de cabeceras para el proxy
+#             header_up Host {host}
+#             header_up X-Real-IP {remote_host}
+#             header_up X-Odoo-dbfilter EJEMPLO
+#         }
+#     }
+#     # Redirección de solicitudes websocket a OdooChat
+#     handle_path /websocket* {
+#         reverse_proxy localhost:8072 {
+#             header_up Host {host}
+#             header_up X-Real-IP {remote_host}
+#             header_up X-Forwarded-Proto {scheme}
+#             header_up Upgrade {>Upgrade}
+#             header_up Connection {>Connection}
+#             header_up X-Odoo-dbfilter EJEMPLO
+#         }
+#     }
+# }
+# # End of EJEMPLO
