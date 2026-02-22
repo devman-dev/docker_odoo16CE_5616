@@ -2,7 +2,7 @@ version: "2.2"
 services:
   web:
     build: .
-    container_name: odooCE18_5616
+    container_name: odoo19
     depends_on:
       - db
     ports:
